@@ -1,38 +1,114 @@
-.App {
+.homepage {
+  padding-top: 100px;
+  height: 75vh;
+  font-family: cursive;
   text-align: center;
+  background-color: #FFFDB5;
+  width: 35%;
+  margin: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.startgame {
+  margin-top: 100px;
+  border: none;
+  border-radius: 3px;
+  height: 40px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: rgb(244, 172, 38);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.gamepage {
+  background-color: #FFFDB5;
+  height: 100vh;
+  padding-top: 100px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.cards {
+  margin: 0 30vw;
 }
 
-.App-link {
-  color: #61dafb;
+.fruitimages {
+  margin: 20px;
+  justify-content: space-evenly;
+  float: left;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  transform-style: preserve-3d;
+  /* Ensures 3D transforms */
+  transition: transform 0.5s;
+  border: none;
+  outline: none;
+  box-shadow: 1px solid white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cardimage {
+  background-color: transparent;
+  color: black;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.modalclass {
+  text-align: center;
+  background-color: orange;
+
+
+}
+
+.modalhead {
+  margin-top: 80px;
+  font-family: cursive;
+}
+
+.modalbody {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: none;
+  border-radius: 10px;
+  background-color: #FFFDB5;
+  height: 300px;
+}
+
+.modalbutton {
+  background-color: rgb(244, 172, 38);
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+  font-family: cursive;
+  margin-top: 10px;
+}
+
+.moves {
+  font-family: cursive;
+}
+
+.front,
+.back {
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  backface-visibility: hidden;
+  /* Hides the back of the card */
+  box-shadow: none;
+}
+
+.front {
+  background-color: #3aabe8;
+  border: none;
+  outline: none;
+}
+
+.back {
+  background-color: white;
+  border: none;
+  outline: none;
+  color: black;
+  transform: rotateY(180deg);
+  /* Initially hides the back side */
 }
